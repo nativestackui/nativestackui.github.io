@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Native Stack UI',
+  tagline: 'A modern cli for Mobile and Web app🔥',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -32,14 +32,13 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  plugins: [ ],
   presets: [
     [
       'classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -47,7 +46,6 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -58,7 +56,6 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
@@ -72,12 +69,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
-        },
-        {
-          to: '/api',
-          label: 'Api',
-          position: 'left'
+          label: 'Docs',
         },
         {
           to: '/blog',
@@ -85,8 +77,7 @@ const config: Config = {
           position: 'left'
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://github.com/nativestackui/',
           position: 'right',
         },
       ],
@@ -100,7 +91,7 @@ const config: Config = {
             {
               label: 'Tutorial',
               to: '/docs/intro',
-            },
+            }
           ],
         },
         {
@@ -112,11 +103,11 @@ const config: Config = {
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/j9MsW9Nj',
             },
             {
               label: 'X',
-              href: 'https://x.com/docusaurus',
+              href: 'https://x.com/NativeStackUI',
             },
           ],
         },
@@ -129,12 +120,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/nativestackui/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Native Stack UI.`,
     },
     prism: {
       theme: prismThemes.github,
