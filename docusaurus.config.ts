@@ -77,8 +77,9 @@ const config: Config = {
           position: 'left'
         },
         {
-          href: 'https://github.com/nativestackui/',
+          href: 'https://github.com/nativestackui/native-stack',
           position: 'right',
+           label: 'Github'
         },
       ],
     },
